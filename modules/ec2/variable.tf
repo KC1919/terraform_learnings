@@ -1,0 +1,1 @@
+variable "primary_subnet_id" {}
