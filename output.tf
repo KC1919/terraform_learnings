@@ -3,5 +3,9 @@ output "vpc_id" {
 }
 
 output "subnet_ids" {
-  value = module.subnet.subnet_ids
+  value = module.subnet[*].subnet_ids
+}
+
+output "nacls" {
+  value = module.nacl[*]
 }
